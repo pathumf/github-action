@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log node version
-        run: node -V 
+        run: node -v 
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node_version }}
