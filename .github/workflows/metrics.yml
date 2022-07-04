@@ -1,9 +1,12 @@
-name: metrics
+name: matrix
 on: push
 
 jobs:
   runs-on: ubuntu-latest
   node-version:
+    strategy:
+      matrix:
+        node_version: [6, 8, 10]
     steps:
       - name: Log node version
         run: node -V 
