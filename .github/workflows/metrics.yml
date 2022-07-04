@@ -8,9 +8,9 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
         node_version: [6, 8, 10]
         include:
-          os: ubuntu-latest
-          node_version: 8
-          is_node_8: "true"
+          - os: ubuntu-latest
+            node_version: 8
+            is_node_8: "true"
         exclude: 
           - os: ubuntu-latest
             node_version: 6
