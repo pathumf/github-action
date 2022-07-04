@@ -16,9 +16,9 @@ jobs:
             node_version: 6
           - os: macos-latest
             node_version: 8
-    runs-on: ${{ metrix.os }}
+    runs-on: ${{ matrix.os }}
     env: 
-      IS_NODE_8: ${{ metrix.is_node_8 }}
+      IS_NODE_8: ${{ matrix.is_node_8 }}
     steps:
       - name: Log node version
         run: node -v 
